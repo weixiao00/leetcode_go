@@ -1,0 +1,25 @@
+# github.com/go-sql-driver/mysql v1.7.0
+## explicit; go 1.13
+
+Go mod 命令是 Go 语言中用于管理依赖关系的命令行工具，常用的 Go mod 命令包括：
+
+go mod init：初始化一个新的 Go 模块（module）；
+
+go mod tidy：清理并更新 Go 模块的依赖关系；
+
+go mod download：下载 Go 模块的依赖关系；
+
+go mod vendor：将依赖关系复制到 vendor 目录下；
+
+go mod verify：验证依赖关系是否正确；
+
+go mod graph：输出 Go 模块的依赖关系图；
+
+go mod edit：编辑 Go 模块的 go.mod 文件；
+
+go mod why：解释为什么需要依赖某个模块；
+
+go mod tidy -v：显示依赖关系变化的详细信息。
+
+// 强制替换包的版本
+replace example.com/mypackage => gitlab.com/mygroup/mypackage v1.0.0
