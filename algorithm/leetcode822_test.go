@@ -39,7 +39,7 @@ func flipgame(fronts []int, backs []int) int {
 	return res
 }
 
-func same(fronts []int, front, back int, res *int) int {
+func same1(fronts []int, front, back int, res *int) int {
 	if front == back {
 		return math.MaxInt
 	}
