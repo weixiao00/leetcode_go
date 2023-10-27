@@ -60,6 +60,7 @@ func (this *Codec) deserialize(data string) *TreeNode {
 
 	var strc func(lower, upper int) *TreeNode
 	strc = func(lower, upper int) *TreeNode {
+		// 这是二叉搜索树才能这样处理
 		if len(arrInt) == 0 || arrInt[0] < lower || arrInt[0] > upper {
 			return nil
 		}
@@ -162,9 +163,9 @@ func Test4991(t *testing.T) {
 	root.Left = &left
 	root.Right = &right
 	codec := Codec{}
-	str := codec.serialize2(root)
+	str := codec.serialize(root)
 	fmt.Println(str)
-	resRoot := codec.deserialize2(str)
+	resRoot := codec.deserialize(str)
 	fmt.Println(resRoot.Val)
 }
 
