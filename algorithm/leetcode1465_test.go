@@ -7,6 +7,7 @@ import (
 	"testing"
 )
 
+// 矩形蛋糕的最大值，长和宽同时最大。面积最大
 func maxArea(h int, w int, horizontalCuts []int, verticalCuts []int) int {
 	if len(horizontalCuts) == 0 || len(verticalCuts) == 0 {
 		return 0

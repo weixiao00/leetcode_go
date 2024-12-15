@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-// 1. 优先队列。O(nlgn)
+// 1. 优先队列。O(nlgn) 需要存储{nums[i], i}
 // 2. 单调递减的队列。O(n)
 func maxSlidingWindow(nums []int, k int) []int {
 	if len(nums) == 0 {

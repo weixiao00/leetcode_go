@@ -15,6 +15,7 @@ func maxSubArray_rep(nums []int) int {
 	for i := 1; i < len(nums); i++ {
 		num := nums[i]
 		// 判断一下是否带着之前的值
+		// 意思就是curVal是否大于0
 		if curVal+num > num {
 			curVal = curVal + num
 		} else {

@@ -2,6 +2,8 @@ package algorithm
 
 import "math"
 
+// 动态规划
+// 二维动态规划
 func longestCommonSubsequence(text1 string, text2 string) int {
 	if len(text1) == 0 || len(text2) == 0 {
 		return 0

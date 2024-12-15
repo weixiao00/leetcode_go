@@ -13,6 +13,7 @@ func threeSumClosest(nums []int, target int) int {
 		return 0
 	}
 	length := len(nums)
+	// 排序
 	sort.Ints(nums)
 
 	update := func(cur int) {
@@ -21,6 +22,8 @@ func threeSumClosest(nums []int, target int) int {
 		}
 	}
 
+	// 和三数之和一样的思路
+	// 这是k应该也得判断一下重复。因为答案只有一个，所以可以不用判断
 	for k, num := range nums {
 		i := k + 1
 		j := length - 1
