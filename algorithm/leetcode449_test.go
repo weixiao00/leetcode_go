@@ -8,6 +8,8 @@ import (
 	"testing"
 )
 
+// 二叉树搜索树的序列化和反序列化
+// 可以直接用二叉树的序列化方式就可以
 type Codec struct {
 }
 
@@ -61,6 +63,8 @@ func (this *Codec) deserialize(data string) *TreeNode {
 	var strc func(lower, upper int) *TreeNode
 	strc = func(lower, upper int) *TreeNode {
 		// 这是二叉搜索树才能这样处理
+		// 这里的arrInt[0]是跟节点。lower是左子节点，upper是右子节点。
+		// 二叉搜索树需要满足这个特性
 		if len(arrInt) == 0 || arrInt[0] < lower || arrInt[0] > upper {
 			return nil
 		}
